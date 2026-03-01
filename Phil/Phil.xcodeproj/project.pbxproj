@@ -112,6 +112,10 @@
 			);
 			name = Phil;
 			packageProductDependencies = (
+				19B6D0052F52350000ED2BEA /* CommonDomain */,
+				19B6D0062F52350000ED2BEA /* CommonUI */,
+				19B6D0072F52350000ED2BEA /* CommonNetwork */,
+				19B6D0082F52350000ED2BEA /* CommonPersistence */,
 			);
 			productName = Phil;
 			productReference = 19B6CEF52F5234CC00ED2BEA /* Phil.app */;
@@ -197,6 +201,12 @@
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 19B6CEF62F5234CC00ED2BEA /* Products */;
+			packageReferences = (
+				19B6D0012F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonDomain" */,
+				19B6D0022F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonUI" */,
+				19B6D0032F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonNetwork" */,
+				19B6D0042F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonPersistence" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -405,6 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +448,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,6 +590,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		19B6D0012F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonDomain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/CommonDomain;
+		};
+		19B6D0022F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/CommonUI;
+		};
+		19B6D0032F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonNetwork" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/CommonNetwork;
+		};
+		19B6D0042F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonPersistence" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/CommonPersistence;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19B6D0052F52350000ED2BEA /* CommonDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19B6D0012F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonDomain" */;
+			productName = CommonDomain;
+		};
+		19B6D0062F52350000ED2BEA /* CommonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19B6D0022F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonUI" */;
+			productName = CommonUI;
+		};
+		19B6D0072F52350000ED2BEA /* CommonNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19B6D0032F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonNetwork" */;
+			productName = CommonNetwork;
+		};
+		19B6D0082F52350000ED2BEA /* CommonPersistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19B6D0042F52350000ED2BEA /* XCLocalSwiftPackageReference "../Packages/CommonPersistence" */;
+			productName = CommonPersistence;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19B6CEED2F5234CC00ED2BEA /* Project object */;
 }
